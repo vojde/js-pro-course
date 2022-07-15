@@ -49,9 +49,9 @@ for (let i = 0; i < text.length; i++) {
         if (text[i] === '/') {
             buttonGrid.innerText = '÷';
         }
-    }else if (text[i] === '.' || text[i] === '0' || text[i] === '=') {
+    } else if (text[i] === '.' || text[i] === '0' || text[i] === '=') {
         sectionButtonBottom.append(buttonGrid);
-    }else {
+    } else {
         sectionButtonMiddle.append(buttonGrid);
     };
 

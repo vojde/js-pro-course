@@ -1,0 +1,102 @@
+:root {
+    --main-bg-color: #f8f9fa;
+    --main-border-color: #f7fefd;
+    --main-bt-color: #bff5ed;
+    --main-result-color: #01352e;
+    --main-equals-color: #e6fcf6;
+    --main-text-bt-color: #000000;
+    --main-text-result-color: #fff;
+    background: linear-gradient(45deg, #01abfb, #03fd6e);
+}
+
+body {
+    padding-top: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box-calculator {
+    width: 320px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+.box-resulte {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: var(--main-result-color);
+}
+
+.computation {
+    width: 100%;
+    height: 40%;
+    text-align: right;
+    color: var(--main-text-result-color);
+    font-size: 20px;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+
+.result {
+    width: 100%;
+    height: 60%;
+    text-align: right;
+    color: var(--main-text-result-color);
+    font-size: 30px;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+
+.box-button {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-text-bt-color);
+    text-align: center;
+}
+
+.section-button-top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.section-button-middle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-button-bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.button {
+    height: 70px;
+    color: var(--main-text-bt-color);
+    border: 1px var(--main-border-color) solid;
+    font-size: 18px;
+    background-color: var(--main-bt-color);
+}
+
+.button-equals {
+    background-color: var(--main-equals-color);
+    cursor: pointer;
+}

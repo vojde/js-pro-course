@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h2 {
+    height: 90px;
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+}
+
+.h2-center {
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 110%;
+}
+
+.button {
+    transition: all;
+}
+
+.button:hover {
+    background-color: #FDDCC4;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.button-round {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+}
+
+.button-x {
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-dark {
+    font-family: 'Georgia';
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    opacity: 1;
+    background-color: #F1CDB3;
+    border: none;
+}
+
+.button-oval {
+    width: 207px;
+    height: 52px;
+    border-radius: 30px;
+}
+
+.button-transparent {
+    width: 187px;
+}
+
+@media (max-width: 770px) {
+    #container {
+        max-width: fit-content;
+        margin: 0;
+    }
+
+    .header-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background: url(image/burger.png) no-repeat right;
+        background-size: contain;
+    }
+
+    .burger_active {
+        background: url(image/burger-90.png) no-repeat right;
+        padding-top: 0;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+    .burger_menu_active {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -60px;
+        bottom: 0;
+        height: 860px;
+        width: 90%;
+        cursor: pointer;
+        z-index: 30;
+        background-color: #292929;
+        overflow: hidden;
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -o-transition: 0.8s;
+        transition: 0.8s;
+    }
+
+    .burger-menu_box-logo {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .burger-menu_logo {
+        width: 70%;
+        height: 70px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .burger-menu_img {
+        width: 30%;
+        padding-top: 30px;
+    }
+
+    .burger-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .burger-menu_link {
+        width: 100%;
+        height: 90%;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .box-a {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .a-about-burger {
+        color: #FAFAFA;
+        font-size: 32px;
+        line-height: 160%;
+        text-decoration: none;
+        text-decoration: underline #F1CDB3 3px;
+    }
+
+    .a-header-burger {
+        font-size: 32px;
+        line-height: 160%;
+        color: #CDCDCD;
+        text-decoration: none;
+        transition: all;
+    }
+
+    .a-header-burger:hover {
+        text-decoration: underline #F1CDB3 3px;
+        color: #FAFAFA;
+    }
+}
+
+@media (max-width: 400px) {
+    #container {
+        max-width: fit-content;
+        margin: 0;
+    }
+
+    h2 {
+        height: 65px;
+        font-size: 25px;
+    }
+
+    .footer {
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+
+    .footer-for-questions {
+        align-items: center;
+    }
+
+    .footer-we-waiting {
+        align-items: center;
+    }
+
+    .h2-footer {
+        font-size: 25px;
+    }
+}
